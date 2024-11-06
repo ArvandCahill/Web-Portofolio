@@ -5,7 +5,7 @@ import { baseURL, renderContent } from '@/app/resources'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 
-export async function generateMetadata(
+export async function generateMetadata( 
 	{params: {locale}}: { params: { locale: string }}
 ) {
 

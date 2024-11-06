@@ -112,7 +112,7 @@ export default function Home(
 											src={person.avatar}
 											size="m"/>
 										)}
-										{t("about.title")}
+										{t("Portofolio Saya")}
 								</Flex>
 							</Button>
 						</RevealFx>
@@ -128,9 +128,6 @@ export default function Home(
 				</Flex>
 			)}
 			<Projects range={[2]} locale={locale}/>
-			{ newsletter.display &&
-				<Mailchimp newsletter={newsletter} />
-			}
 		</Flex>
 	);
 }

@@ -58,7 +58,11 @@ const Background = forwardRef<HTMLDivElement, BackgroundProps>(({
                         width: '100%',
                         height: '100%',
                         filter: 'contrast(1.5)',
-                        background: 'radial-gradient(100% 100% at 49.99% 0%, var(--static-transparent) 0%, var(--page-background) 100%), radial-gradient(87.4% 84.04% at 6.82% 16.24%, var(--brand-background-medium) 0%, var(--static-transparent) 100%), radial-gradient(217.89% 126.62% at 48.04% 0%, var(--accent-solid-medium) 0%, var(--static-transparent) 100%)',
+                        background: `
+    radial-gradient(100% 70% at 49.99% 0%, var(--static-transparent) 0%, rgba(0, 0, 20, 1) 100%),
+    radial-gradient(87.4% 60% at 6.82% 16.24%, #b4b1b8 0%, var(--static-transparent) 100%),
+    radial-gradient(217.89% 70% at 48.04% 0%, #6f6d72 0%, var(--static-transparent) 100%)
+`,
                         ...style,
                     }}>
                 </div>
@@ -103,23 +107,23 @@ const Background = forwardRef<HTMLDivElement, BackgroundProps>(({
                 </div>
             )}
             {shootingStars && stars.map((star) => (
-            <div
-                key={star.id}
-                className={className}
-                style={{
-                    position: 'absolute',
-                    top: star.top,
-                    left: star.left,
-                    width: '1px',
-                    height: '1px',
-                    background: 'linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))', // Horizontal gradient for trail
-                    animation: 'shooting-star 5s ease-out forwards',
-                    perspective: '1000px', // Set perspective to simulate depth
-                    ...style,
-                }}
-            />
-        ))}
-        <style jsx>{`
+                <div
+                    key={star.id}
+                    className={className}
+                    style={{
+                        position: 'absolute',
+                        top: star.top,
+                        left: star.left,
+                        width: '1px',
+                        height: '1px',
+                        background: 'linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))', // Horizontal gradient for trail
+                        animation: 'shooting-star 5s ease-out forwards',
+                        perspective: '1000px', // Set perspective to simulate depth
+                        ...style,
+                    }}
+                />
+            ))}
+            <style jsx>{`
             @keyframes shooting-star {
                 0% {
                     width: 1px; // Start small

@@ -105,36 +105,13 @@ export const Header = () => {
                         )}
                         { routes['/about'] && (
                             <ToggleButton
-                                prefixIcon="person"
+                                prefixIcon="book"
                                 href={`/${params?.locale}/about`}
                                 selected={pathname === "/about"}>
                                 <Flex paddingX="2" hide="s">{about.label}</Flex>
                             </ToggleButton>
                         )}
-                        { routes['/work'] && (
-                            <ToggleButton
-                                prefixIcon="grid"
-                                href={`/${params?.locale}/work`}
-                                selected={pathname.startsWith('/work')}>
-                                <Flex paddingX="2" hide="s">{work.label}</Flex>
-                            </ToggleButton>
-                        )}
-                        { routes['/blog'] && (
-                            <ToggleButton
-                                prefixIcon="book"
-                                href={`/${params?.locale}/blog`}
-                                selected={pathname.startsWith('/blog')}>
-                                <Flex paddingX="2" hide="s">{blog.label}</Flex>
-                            </ToggleButton>
-                        )}
-                        { routes['/gallery'] && (
-                            <ToggleButton
-                                prefixIcon="gallery"
-                                href={`/${params?.locale}/gallery`}
-                                selected={pathname.startsWith('/gallery')}>
-                                <Flex paddingX="2" hide="s">{gallery.label}</Flex>
-                            </ToggleButton>
-                        )}
+                       
                     </Flex>
                 </Flex>
             </Flex>
@@ -161,11 +138,7 @@ export const Header = () => {
                             ))}
                         </Flex>
                     }
-                    <Flex hide="s">
-                        { display.time && (
-                            <TimeDisplay timeZone={person.location}/>
-                        )}
-                    </Flex>
+        
                 </Flex>
             </Flex>
         </Flex>
