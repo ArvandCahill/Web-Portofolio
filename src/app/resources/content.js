@@ -12,13 +12,6 @@ const person = {
     location:<></>
 }
 
-const blog = {
-    label: '',
-    title: '',
-    description: '',
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
-}
 
 const social = [
     {
