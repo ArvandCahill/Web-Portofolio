@@ -155,13 +155,6 @@ const createI18nContent = (t) => {
         }
     }
 
-    const blog = {
-        label: t("blog.label"),
-        title: t("blog.title"),
-        description: t("blog.description", {name: person.name})
-        // Create new blog posts by adding a new .mdx file to app/blog/posts
-        // All posts will be listed on the /blog route
-    }
 
     const work = {
         label: t("work.label"),
@@ -255,7 +248,6 @@ const createI18nContent = (t) => {
         newsletter,
         home,
         about,
-        blog,
         work,
         gallery
     }

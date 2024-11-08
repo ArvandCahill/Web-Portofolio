@@ -10,8 +10,7 @@ const renderContent = (t) => {
             person,
             social,
             home,
-            about,
-            blog
+            about
         }
     }
 };
