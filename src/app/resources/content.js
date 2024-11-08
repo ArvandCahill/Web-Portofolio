@@ -8,6 +8,7 @@ const person = {
     },
     role: 'Game Programmer',
     avatar: '/images/avatar1.jpeg',
+    location:<>Jawa</>
 }
 
 const social = [
