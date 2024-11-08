@@ -8,7 +8,7 @@ const person = {
     },
     role: 'Game Programmer',
     avatar: '/images/avatar1.jpeg',
-    location:<>Jawa</>
+    location:<></>
 }
 
 const social = [
@@ -237,6 +237,9 @@ const about = {
             },
         ]
     },
+
+    blog: { /* blog data */ },
+    gallery: { /* gallery data */ },
 
     technical: {
         display: false,
