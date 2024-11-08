@@ -62,6 +62,7 @@ const createI18nContent = (t) => {
         },
         avatar: {
             display: true
+            location: true
         },
         calendar: {
             display: true,
