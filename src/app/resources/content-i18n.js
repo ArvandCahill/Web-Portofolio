@@ -11,7 +11,7 @@ const createI18nContent = (t) => {
         avatar:    '/images/avatar.jpg',
         location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
         languages: ['English', 'Bahasa'],  // optional: Leave the array empty if you don't want to display languages
-        location: ['jawa']
+        location: ['']
     }
 
     const newsletter = {
