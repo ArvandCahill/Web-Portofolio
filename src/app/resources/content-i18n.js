@@ -61,7 +61,7 @@ const createI18nContent = (t) => {
             subItems: true
         },
         avatar: {
-            display: true
+            display: true,
             location: true
         },
         calendar: {
