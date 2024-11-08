@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading, Flex, Text, Button,  Avatar, RevealFx } from '@/once-ui/components';
+import { Heading, Flex, Text, Button, Avatar, RevealFx } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
 
 import { baseURL, routes, renderContent } from '@/app/resources'; 
@@ -47,7 +47,7 @@ export default function Home(
 ) {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations();
-	const { home, about, person, newsletter } = renderContent(t);
+	const { home, about, person } = renderContent(t);
 	return (
 		<Flex
 			maxWidth="m" fillWidth gap="xl"
@@ -112,7 +112,7 @@ export default function Home(
 											src={person.avatar}
 											size="m"/>
 										)}
-										{t("Portofolio Saya")}
+										{t("My Portfolio")}
 								</Flex>
 							</Button>
 						</RevealFx>

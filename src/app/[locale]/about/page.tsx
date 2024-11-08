@@ -51,14 +51,14 @@ export default function About(
             items: []
         },
         {
-            title: about.work.title,
-            display: about.work.display,
-            items: about.work.experiences.map(experience => experience.company)
-        },
-        {
             title: about.studies.title,
             display: about.studies.display,
             items: about.studies.institutions.map(institution => institution.name)
+        },
+        {
+            title: about.work.title,
+            display: about.work.display,
+            items: about.work.experiences.map(experience => experience.company)
         },
         {
             title: about.technical.title,
@@ -66,7 +66,7 @@ export default function About(
             items: about.technical.skills.map(skill => skill.title)
         },
     ];
-    
+
     return (
         <Flex fillWidth maxWidth="m" direction="column">
             <script
@@ -106,8 +106,11 @@ export default function About(
                         minWidth="160" paddingX="l" paddingBottom="xl" gap="m"
                         flex={3} direction="column" alignItems="center">
                         <Avatar src={person.avatar} size="xl" />
-                        <Flex gap="8" alignItems="center">
+                        <Flex gap="8" alignItems="center" direction="column">
                             <Icon onBackground="accent-weak" name="globe" />
+                            <Text variant="body-default-xs" onBackground="neutral-weak">
+                                {about.avatar.location} {/* Gantilah 'about.avatar.text' sesuai kebutuhan */}
+                            </Text>
                         </Flex>
                     </Flex>
                 )}
@@ -120,25 +123,10 @@ export default function About(
                         {about && (
                             <Flex
                                 className={styles.blockAlign}
-                                style={{
-                                    backdropFilter: 'blur(var(--static-space-1))',
-                                    border: '1px solid var(--brand-alpha-medium)',
-                                    width: 'fit-content'
-                                }}
-                                alpha="brand-weak" radius="full"
-                                fillWidth padding="4" gap="8" marginBottom="m"
-                                alignItems="center">
+                            >
                                 <Flex paddingLeft="12">
                                     {/* Hapus ikon kalender di sini */}
                                 </Flex>
-                                <Flex paddingX="8">
-                                    Schedule a call
-                                </Flex>
-                                <IconButton
-                                    href={about}
-                                    data-border="rounded"
-                                    variant="tertiary"
-                                    icon="chevronRight" />
                             </Flex>
                         )}
                         <Heading className={styles.textAlign} variant="display-strong-xl">
@@ -171,6 +159,31 @@ export default function About(
                         <Flex direction="column" textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
                             {about.intro.description}
                         </Flex>
+                    )}
+
+                    {about.studies.display && (
+                        <>
+                            <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
+                                {about.studies.title}
+                            </Heading>
+                            <Flex direction="column" fillWidth gap="l" marginBottom="40">
+                                {about.studies.institutions.map((institution, index) => (
+                                    <Flex key={`${institution.name}-${index}`} fillWidth gap="4" direction="column">
+                                        <Flex fillWidth justifyContent="space-between" alignItems="flex-end" marginBottom="4">
+                                            <Text id={institution.name} variant="heading-strong-l">
+                                                {institution.name}
+                                            </Text>
+                                            <Text variant="heading-default-xs" onBackground="neutral-weak">
+                                                {institution.timeframe}
+                                            </Text>
+                                        </Flex>
+                                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                                            {institution.description}
+                                        </Text>
+                                    </Flex>
+                                ))}
+                            </Flex>
+                        </>
                     )}
 
                     {about.work.display && (
@@ -212,26 +225,6 @@ export default function About(
                                                 ))}
                                             </Flex>
                                         )}
-                                    </Flex>
-                                ))}
-                            </Flex>
-                        </>
-                    )}
-
-                    {about.studies.display && (
-                        <>
-                            <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
-                                {about.studies.title}
-                            </Heading>
-                            <Flex direction="column" fillWidth gap="l" marginBottom="40">
-                                {about.studies.institutions.map((institution, index) => (
-                                    <Flex key={`${institution.name}-${index}`} fillWidth gap="4" direction="column">
-                                        <Text id={institution.name} variant="heading-strong-l">
-                                            {institution.name}
-                                        </Text>
-                                        <Text variant="heading-default-xs" onBackground="neutral-weak">
-                                            {institution.description}
-                                        </Text>
                                     </Flex>
                                 ))}
                             </Flex>

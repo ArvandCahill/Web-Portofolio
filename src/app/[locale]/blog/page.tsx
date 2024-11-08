@@ -46,7 +46,7 @@ export default function Blog(
 	unstable_setRequestLocale(locale);
 
 	const t = useTranslations();
-	const { person, blog, newsletter } = renderContent(t);
+	const { person, blog} = renderContent(t);
     return (
         <Flex
 			fillWidth maxWidth="s"
@@ -83,9 +83,6 @@ export default function Blog(
 				<Posts range={[1,3]} locale={locale}/>
 				<Posts range={[4]} columns="2" locale={locale}/>
 			</Flex>
-            {newsletter.display && (
-                <Mailchimp newsletter={newsletter} />
-            )}
         </Flex>
     );
 }
