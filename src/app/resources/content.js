@@ -1,4 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
+import { useTranslations } from 'next-intl';
 
 const person = {
     firstName: 'Arvand',
@@ -9,6 +10,14 @@ const person = {
     role: 'Game Programmer',
     avatar: '/images/avatar1.jpeg',
     location:<></>
+}
+
+const blog = {
+    label: '',
+    title: '',
+    description: '',
+    // Create new blog posts by adding a new .mdx file to app/blog/posts
+    // All posts will be listed on the /blog route
 }
 
 const social = [
@@ -238,8 +247,6 @@ const about = {
         ]
     },
 
-    blog: { /* blog data */ },
-    gallery: { /* gallery data */ },
 
     technical: {
         display: false,
@@ -273,4 +280,4 @@ const about = {
     }
 }
 
-export { person, social, home, about, };
+export { person, social, home, about, blog };
