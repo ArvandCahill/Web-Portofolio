@@ -273,4 +273,4 @@ const about = {
     }
 }
 
-export { person, social, home, about, blog };
+export { person, social, home, about};
