@@ -89,13 +89,13 @@ const about = {
 
                 images: [
                     {
-                        src: 'images/projects/project-01/avatar-01.png',
+                        src: 'images/projects/SoD.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/projects/SoD1.png',
+                        src: '/images/projects/SoD1.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
@@ -114,7 +114,7 @@ const about = {
 
                 images: [
                     {
-                        src: '/images/projects/DWTC.png',
+                        src: '/images/projects/DWTC.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
@@ -131,7 +131,7 @@ const about = {
                 ],
                 images: [
                     {
-                        src: '/images/projects/xavena.png',
+                        src: '/images/projects/xavena.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
@@ -159,7 +159,7 @@ const about = {
                         height: 16
                     },
                     {
-                        src: '/images/projects/BB2.png',
+                        src: '/images/projects/BB2.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
@@ -183,19 +183,19 @@ const about = {
                 ],
                 images: [
                     {
-                        src: '/images/projects/chess3.png',
+                        src: '/images/projects/chess3.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/projects/chess4.png',
+                        src: '/images/projects/chess4.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/projects/chess1.png',
+                        src: '/images/projects/chess1.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
@@ -224,13 +224,13 @@ const about = {
 
                 images: [
                     {
-                        src: '/images/projects/lostcase.png',
+                        src: '/images/projects/lostcase.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/projects/room.png',
+                        src: '/images/projects/room.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
