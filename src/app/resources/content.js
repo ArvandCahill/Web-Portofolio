@@ -8,7 +8,7 @@ const person = {
         return `${this.firstName} ${this.lastName}`;
     },
     role: 'Game Programmer',
-    avatar: '/images/avatar1.jpeg',
+    avatar: '/images/avatar.jpg',
     location:<></>
 }
 
@@ -95,7 +95,7 @@ const about = {
                         height: 9
                     },
                     {
-                        src: '/images/new/SoD1.png',
+                        src: '/images/projects/SoD1.png',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
@@ -114,7 +114,7 @@ const about = {
 
                 images: [
                     {
-                        src: '/images/new/DWTC.png',
+                        src: '/images/projects/DWTC.png',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
@@ -131,7 +131,7 @@ const about = {
                 ],
                 images: [
                     {
-                        src: '/images/new/xavena.png',
+                        src: '/images/projects/xavena.png',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
@@ -153,19 +153,19 @@ const about = {
 
                 images: [
                     {
-                        src: '/images/new/BB1.jpg',
+                        src: '/images/projects/BB1.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/new/BB2.png',
+                        src: '/images/projects/BB2.png',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/new/BB3.jpg',
+                        src: '/images/projects/BB3.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
@@ -183,25 +183,25 @@ const about = {
                 ],
                 images: [
                     {
-                        src: '/images/new/chess3.png',
+                        src: '/images/projects/chess3.png',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/new/chess4.png',
+                        src: '/images/projects/chess4.png',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/new/chess1.png',
+                        src: '/images/projects/chess1.png',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/new/chess2.jpg',
+                        src: '/images/projects/chess2.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
@@ -224,13 +224,13 @@ const about = {
 
                 images: [
                     {
-                        src: '/images/new/lostcase.png',
+                        src: '/images/projects/lostcase.png',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/new/room.png',
+                        src: '/images/projects/room.png',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
