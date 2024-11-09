@@ -17,7 +17,7 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/arvand-cahil',
+        link: 'https://github.com/ArvandCahill',
     },
     {
         name: 'LinkedIn',
@@ -40,7 +40,7 @@ const home = {
 }
 
 const about = {
-    label: 'Portfolio',
+    label: 'About Me',
     title: 'Arvand Cahil',
     description: `Get to know ${person.name}, ${person.role}`,
     tableOfContent: {
@@ -242,33 +242,33 @@ const about = {
 
 
     technical: {
-        display: false,
+        display: True,
         title: 'Technical Skills',
         skills: [
             {
-                title: 'Unity',
-                description: <>Experienced in building and optimizing games using Unity3D, including scripting with C#.</>,
+                title: 'Unreal Engine',
+                description: <>Proficient in game development and simulation with Unreal Engine, using Blueprint and C++ programming.</>,
                 images: [
                     {
-                        src: '/images/projects/game-project-02.jpg',
-                        alt: 'Project Image',
+                        src: '/images/projects/Unreal Engine.jpg',
+                        alt: 'Project Image/',
                         width: 16,
                         height: 9
                     },
                 ]
             },
             {
-                title: 'Unreal Engine',
-                description: <>Proficient in game development and simulation with Unreal Engine, using Blueprint and C++ programming.</>,
+                title: 'Unity',
+                description: <>Experienced in building and optimizing games using Unity3D, including scripting with C#.</>,
                 images: [
                     {
-                        src: '/images/projects/game-project-03.jpg',
+                        src: '/images/projects/Unity.jpg',
                         alt: 'Project Image',
                         width: 16,
                         height: 9
                     },
                 ]
-            }
+            },
         ]
     }
 }
