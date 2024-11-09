@@ -242,7 +242,7 @@ const about = {
 
 
     technical: {
-        display: True,
+        display: false,
         title: 'Technical Skills',
         skills: [
             {
