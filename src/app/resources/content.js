@@ -89,7 +89,7 @@ const about = {
 
                 images: [
                     {
-                        src: '/images/new/SoD.png',
+                        src: 'images/projects/project-01/avatar-01.png',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9

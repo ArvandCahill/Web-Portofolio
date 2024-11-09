@@ -1,4 +1,4 @@
-const baseURL = 'arvands-portfolio.vercel.app';
+const baseURL = 'https://arvands-portfolio.vercel.app/';
 
 // Enable localization
 const i18n = false;
