@@ -131,7 +131,7 @@ const about = {
                 ],
                 images: [
                     {
-                        src: '/images/projects/xavena.jpg',
+                        src: '/images/projects/Xavena.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
@@ -183,25 +183,25 @@ const about = {
                 ],
                 images: [
                     {
-                        src: '/images/projects/chess3.jpg',
+                        src: '/images/projects/Chess3.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/projects/chess4.jpg',
+                        src: '/images/projects/Chess4.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/projects/chess1.jpg',
+                        src: '/images/projects/Chess1.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
                     },
                     {
-                        src: '/images/projects/chess2.jpg',
+                        src: '/images/projects/Chess2.jpg',
                         alt: 'Game Project Image',
                         width: 9,
                         height: 16
@@ -224,13 +224,13 @@ const about = {
 
                 images: [
                     {
-                        src: '/images/projects/lostcase.jpg',
+                        src: '/images/projects/Lostcase.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/projects/room.jpg',
+                        src: '/images/projects/Room.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
