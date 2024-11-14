@@ -10,7 +10,7 @@ const createI18nContent = (t) => {
         role:      t("person.role"),
         avatar:    '/images/avatar.jpg',
         location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa'],  // optional: Leave the array empty if you don't want to display languages
+        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
@@ -61,8 +61,7 @@ const createI18nContent = (t) => {
             subItems: true
         },
         avatar: {
-            display: true,
-            location: true
+            display: true
         },
         calendar: {
             display: true,
@@ -107,12 +106,12 @@ const createI18nContent = (t) => {
                 {
                     name: 'University of Jakarta',
                     description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
-                    timeframe: true,
+                    timeframe: true
                 },
                 {
                     name: 'Build the Future',
                     description: <>{t("about.studies.institutions.Build the Future.description")}</>,
-                    timeframe: true,
+                    timeframe:true
                 }
             ]
         },

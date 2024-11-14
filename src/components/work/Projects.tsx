@@ -14,6 +14,7 @@ export function Projects({ range, locale }: ProjectsProps) {
     const sortedProjects = allProjects.sort((a, b) => {
         return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
     });
+    
 
     const displayedProjects = range
         ? sortedProjects.slice(range[0] - 1, range[1] ?? sortedProjects.length)
@@ -26,7 +27,7 @@ export function Projects({ range, locale }: ProjectsProps) {
             {displayedProjects.map((post) => (
                 <ProjectCard
                     key={post.slug}
-                    href={`work/${post.slug}`}
+                    href={`work`}
                     images={post.metadata.images}
                     title={post.metadata.title}
                     description={post.metadata.summary}

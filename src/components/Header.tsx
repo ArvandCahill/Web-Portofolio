@@ -19,37 +19,7 @@ type TimeDisplayProps = {
     locale?: string;  // Optionally allow locale, defaulting to 'en-GB'
 };
 
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
-    const [currentTime, setCurrentTime] = useState('');
 
-    useEffect(() => {
-        const updateTime = () => {
-            const now = new Date();
-            const options: Intl.DateTimeFormatOptions = {
-                timeZone,
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
-                hour12: false,
-            };
-            const timeString = new Intl.DateTimeFormat(locale, options).format(now);
-            setCurrentTime(timeString);
-        };
-
-        updateTime();
-        const intervalId = setInterval(updateTime, 1000);
-
-        return () => clearInterval(intervalId);
-    }, [timeZone, locale]);
-
-    return (
-        <>
-            {currentTime}
-        </>
-    );
-};
-
-export default TimeDisplay;
 
 export const Header = () => {
     const router = useRouter();
@@ -68,7 +38,7 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about} = renderContent(t);
+    const { person, home, about, work } = renderContent(t);
 
     return (
         <Flex style={{height: 'fit-content'}}
@@ -81,11 +51,6 @@ export const Header = () => {
                 paddingLeft="12" fillWidth
                 alignItems="center"
                 textVariant="body-default-s">
-                { display.location && (
-                    <Flex hide="s">
-                        {person.location}
-                    </Flex>
-                )}
             </Flex>
             <Flex fillWidth justifyContent="center">
                 <Flex
@@ -105,13 +70,20 @@ export const Header = () => {
                         )}
                         { routes['/about'] && (
                             <ToggleButton
-                                prefixIcon="book"
+                                prefixIcon="person"
                                 href={`/${params?.locale}/about`}
                                 selected={pathname === "/about"}>
                                 <Flex paddingX="2" hide="s">{about.label}</Flex>
                             </ToggleButton>
                         )}
-                       
+                        { routes['/work'] && (
+                            <ToggleButton
+                                prefixIcon="grid"
+                                href={`/${params?.locale}/work`}
+                                selected={pathname.startsWith('/work')}>
+                                <Flex paddingX="2" hide="s">{work.label}</Flex>
+                            </ToggleButton>
+                        )}
                     </Flex>
                 </Flex>
             </Flex>
@@ -138,7 +110,6 @@ export const Header = () => {
                             ))}
                         </Flex>
                     }
-        
                 </Flex>
             </Flex>
         </Flex>

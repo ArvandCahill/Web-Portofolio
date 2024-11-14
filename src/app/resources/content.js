@@ -1,19 +1,26 @@
 import { InlineCode } from "@/once-ui/components";
-import { useTranslations } from 'next-intl';
 
 const person = {
     firstName: 'Arvand',
-    lastName: 'Cahil',
+    lastName:  'Cahil',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role: 'Game Programmer',
-    avatar: '/images/avatar.jpg',
-    location:<></>
+    role:      'Game Programmer',
+    avatar:    '/images/avatar.jpg',
+    location:  'Malang, Indonesia',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['Bahasa', 'English' ]  // optional: Leave the array empty if you don't want to display languages
 }
 
+const newsletter = {
+    display: false,
+    title: <>Subscribe to {person.firstName}'s Newsletter</>,
+    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+}
 
 const social = [
+    // Links are automatically displayed.
+    // Import new icons in /once-ui/icons.ts
     {
         name: 'GitHub',
         icon: 'github',
@@ -33,47 +40,32 @@ const social = [
 
 const home = {
     label: 'Home',
-    title: `Arvand Cahil`,
-    description: `Welcome to my portfolio, where I showcase my work and journey as a Game Programmer and student at SMKN 4 Malang.`,
+    title: `Home`,
+    description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Game Programmer</>,
-    subline: <>Hello, I am Arvand Cahil, a student at SMKN 4 Malang focusing on game programming. With a dedication to creating engaging and interactive gameplay experiences, I aim to actively develop projects to expand my skills and stay updated with the latest advancements in game development technology.</>
+    subline: <>Hello, I am Arvand Cahil, a student at <InlineCode>SMK Negeri 4 Malang</InlineCode> majoring in Software Engineering, focusing on game development.</>
 }
 
 const about = {
-    label: 'About Me',
-    title: 'Arvand Cahil',
-    description: `Get to know ${person.name}, ${person.role}`,
+    label: 'About',
+    title: 'About Me',
+    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: true
     },
     avatar: {
-        display: true,
-        location: 'Malang, Indonesia'
+        display: true
+    },
+    calendar: {
+        display: false,
+        link: 'https://cal.com'
     },
     intro: {
         display: true,
         title: 'Introduction',
         description: <>A student at SMK Negeri 4 Malang majoring in Software Engineering, focusing on game development. Through various projects, I strive to constantly update my knowledge and follow the latest technological developments in the field of game development.</>
     },
-
-    studies: {
-        display: true,
-        title: 'Education',
-        institutions: [
-            {
-                name: 'SMK Negeri 4 Malang',
-                timeframe: 'July 2023 - May 2026',
-                description: <>Software Engineering (RPL) Major</>
-            },
-            {
-                name: 'SMP Negeri 11 Malang',
-                timeframe: 'July 2020 - May 2023',
-                description: <></>
-            }
-        ]
-    },
-
     work: {
         display: true,
         title: 'Projects',
@@ -89,7 +81,7 @@ const about = {
 
                 images: [
                     {
-                        src: 'images/projects/SoD.jpg',
+                        src: '/images/projects/SoD.jpg',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
@@ -239,19 +231,33 @@ const about = {
             },
         ]
     },
-
-
+    studies: {
+        display: true, // set to false to hide this section
+        title: 'Education',
+        institutions: [
+            {
+                name: 'SMK Negeri 4 Malang',
+                description: <>Software Engineering Major (RPL).</>,
+                timeframe:'2020 - 2023'
+            },
+            {
+                name: 'SMP Negeri 11 Malang',
+                description: <></>,
+                timeframe:'2023 - 2026'
+            }
+        ]
+    },
     technical: {
-        display: false,
+        display: true,
         title: 'Technical Skills',
         skills: [
             {
                 title: 'Unreal Engine',
-                description: <>Proficient in game development and simulation with Unreal Engine, using Blueprint and C++ programming.</>,
+                description: <>Proficient in Unreal Engine, focusing on game prototyping with Blueprint, developing game mechanics, and optimizing performance. Experienced in implementing animations, creating cutscenes, and conducting world-building to enhance game narratives. Recently explored AMD FidelityFX™ Super Resolution (FSR) 3 for optimizing graphics in Unreal.</>,
                 images: [
                     {
-                        src: '/images/projects/Unreal Engine.jpg',
-                        alt: 'Project Image/',
+                        src: '/images/projects/Unreal Engine.png',
+                        alt: 'Unreal Engine Project Image',
                         width: 16,
                         height: 9
                     },
@@ -259,11 +265,11 @@ const about = {
             },
             {
                 title: 'Unity',
-                description: <>Experienced in building and optimizing games using Unity3D, including scripting with C#.</>,
+                description: <>Skilled in Unity, with experience in C# scripting for gameplay systems, and sound design. Developed and refined game projects by implementing audio and visual elements to support gameplay ambiance.</>,
                 images: [
                     {
                         src: '/images/projects/Unity.jpg',
-                        alt: 'Project Image',
+                        alt: 'Unity Project Image',
                         width: 16,
                         height: 9
                     },
@@ -273,4 +279,13 @@ const about = {
     }
 }
 
-export { person, social, home, about};
+const work = {
+    label: 'work',
+    title: 'My projects',
+    description: `Design and dev projects by ${person.name}`
+    // Create new project pages by adding a new .mdx file to app/blog/posts
+    // All projects will be listed on the /home and /work routes
+}
+
+
+export { person, social, home, about, work };

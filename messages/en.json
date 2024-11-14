@@ -2,6 +2,11 @@
     "person": {
         "role": "Design Engineer"
     },
+    "newsletter": {
+        "title": "Subscribe to {firstName}'s Newsletter",
+        "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
+        "button": "Sign up"
+    },
     "home": {
         "label": "Home",
         "title": "{name}'s Portfolio",
@@ -71,6 +76,6 @@
         "description": "A photo collection by {name}"
     },
     "projectCard": {
-        "label": "Read Case Study"
+        "label": "My Work"
     }
 }

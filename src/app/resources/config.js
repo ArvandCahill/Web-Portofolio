@@ -1,4 +1,4 @@
-const baseURL = 'arvands-portfolio.vercel.app';
+const baseURL = 'demo.app'
 
 // Enable localization
 const i18n = false;
@@ -12,7 +12,7 @@ const i18nOptions = {
 const routes = {
     '/':        true,
     '/about':   true,
-    '/work':    false,
+    '/work':    true,
     '/blog':    false,
     '/gallery': false,
 }
