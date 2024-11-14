@@ -32,7 +32,7 @@ export const Header = () => {
         startTransition(() => {
             router.replace(
                 pathname,
-                {locale: nextLocale}
+                { locale: nextLocale }
             )
         })
     }
@@ -41,7 +41,7 @@ export const Header = () => {
     const { person, home, about, work } = renderContent(t);
 
     return (
-        <Flex style={{height: 'fit-content'}}
+        <Flex style={{ height: 'fit-content' }}
             className={styles.position}
             as="header"
             zIndex={9}
@@ -60,7 +60,7 @@ export const Header = () => {
                     <Flex
                         gap="4"
                         textVariant="body-default-s">
-                        { routes['/'] && (
+                        {routes['/'] && (
                             <ToggleButton
                                 prefixIcon="home"
                                 href={`/${params?.locale}`}
@@ -68,7 +68,7 @@ export const Header = () => {
                                 <Flex paddingX="2" hide="s">{home.label}</Flex>
                             </ToggleButton>
                         )}
-                        { routes['/about'] && (
+                        {routes['/about'] && (
                             <ToggleButton
                                 prefixIcon="person"
                                 href={`/${params?.locale}/about`}
@@ -76,7 +76,7 @@ export const Header = () => {
                                 <Flex paddingX="2" hide="s">{about.label}</Flex>
                             </ToggleButton>
                         )}
-                        { routes['/work'] && (
+                        {routes['/work'] && (
                             <ToggleButton
                                 prefixIcon="grid"
                                 href={`/${params?.locale}/work`}
@@ -84,6 +84,14 @@ export const Header = () => {
                                 <Flex paddingX="2" hide="s">{work.label}</Flex>
                             </ToggleButton>
                         )}
+                        <ToggleButton
+                            prefixIcon="book"
+                            href="https://drive.google.com/file/d/1FtZolI5c26jo2gmEbFDx-OlDcJy94Gnh/view?usp=drive_link"  // Ganti dengan link GDrive CV Anda
+                            target="_blank"  // Membuka link di tab baru
+                            selected={false}>
+                            <Flex paddingX="2" hide="s">CV</Flex>
+                        </ToggleButton>
+
                     </Flex>
                 </Flex>
             </Flex>
@@ -104,7 +112,7 @@ export const Header = () => {
                                     selected={params?.locale === locale}
                                     onClick={() => handleLanguageChange(locale)}
                                     className={isPending && 'pointer-events-none opacity-60' || ''}
-                                    >
+                                >
                                     {locale.toUpperCase()}
                                 </ToggleButton>
                             ))}
