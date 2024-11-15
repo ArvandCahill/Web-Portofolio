@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Heading, Flex, Text, Button,  Avatar, RevealFx } from '@/once-ui/components';
+import { Heading, Flex, Text, Button, Avatar, RevealFx, IconButton } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
 
-import { baseURL, routes, renderContent } from '@/app/resources'; 
+import { baseURL, routes, renderContent } from '@/app/resources';
 import { Mailchimp } from '@/components';
 import { Posts } from '@/components/blog/Posts';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
@@ -47,7 +47,10 @@ export default function Home(
 ) {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations();
-	const { home, about, person } = renderContent(t);
+	const { home, about, person, social } = renderContent(t);
+    
+   
+
 	return (
 		<Flex
 			maxWidth="m" fillWidth gap="xl"
@@ -117,6 +120,22 @@ export default function Home(
 							</Button>
 						</RevealFx>
 					</Flex>
+                
+                    {/* Social Media Icons */}
+                    <Flex gap="16">
+                        {social.map((item) => (
+                            item.link && (
+                                <IconButton
+                                    key={item.name}
+                                    href={item.link}
+                                    icon={item.icon}
+                                    tooltip={item.name}
+                                    size="s"
+                                    variant="ghost"/>
+                            )
+                        ))}
+                    </Flex>
+                    {/* End Social Media Icons */}
 				
 			</Flex>
 			<RevealFx translateY="16" delay={0.6}>

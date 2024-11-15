@@ -280,7 +280,7 @@ const about = {
 }
 
 const work = {
-    label: 'work',
+    label: 'Work',
     title: 'My Work',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
