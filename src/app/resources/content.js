@@ -86,12 +86,6 @@ const about = {
                         width: 16,
                         height: 9
                     },
-                    {
-                        src: '/images/projects/SoD1.jpg',
-                        alt: 'Game Project Image',
-                        width: 16,
-                        height: 9
-                    }
                 ]
             },
             {
@@ -150,18 +144,6 @@ const about = {
                         width: 9,
                         height: 16
                     },
-                    {
-                        src: '/images/projects/BB2.jpg',
-                        alt: 'Game Project Image',
-                        width: 9,
-                        height: 16
-                    },
-                    {
-                        src: '/images/projects/BB3.jpg',
-                        alt: 'Game Project Image',
-                        width: 9,
-                        height: 16
-                    }
                 ]
             },
             {
@@ -180,24 +162,6 @@ const about = {
                         width: 9,
                         height: 16
                     },
-                    {
-                        src: '/images/projects/Chess4.jpg',
-                        alt: 'Game Project Image',
-                        width: 9,
-                        height: 16
-                    },
-                    {
-                        src: '/images/projects/Chess1.jpg',
-                        alt: 'Game Project Image',
-                        width: 9,
-                        height: 16
-                    },
-                    {
-                        src: '/images/projects/Chess2.jpg',
-                        alt: 'Game Project Image',
-                        width: 9,
-                        height: 16
-                    }
                 ]
             },
             {
@@ -221,12 +185,6 @@ const about = {
                         width: 16,
                         height: 9
                     },
-                    {
-                        src: '/images/projects/Room.jpg',
-                        alt: 'Game Project Image',
-                        width: 16,
-                        height: 9
-                    }
                 ]
             },
         ]
