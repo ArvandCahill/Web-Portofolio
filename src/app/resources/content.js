@@ -93,7 +93,7 @@ const about = {
                 timeframe: 'January 2024',
                 role: 'Sound Design',
                 achievements: [
-                    <>A group project during the Global Game Jam Malang.</>,
+                    <>A group project during the Global Game Jam 2024 in Malang.</>,
                     <>Searched for sound effects to support the atmosphere and theme of the game.</>,
                     <>Used sound design software to adjust audio quality and effects according to gameplay needs.</>
                 ],
@@ -166,7 +166,7 @@ const about = {
             },
             {
                 company: 'Lost Case',
-                timeframe: 'September 2024 - Present',
+                timeframe: 'September 2024 - November 2024',
                 role: 'Programmer',
                 achievements: [
                     <>A group project based on Unreal Engine.</>,
@@ -174,13 +174,34 @@ const about = {
                     <>Implemented monster animations for AI usage in the game.</>,
                     <>Created cutscenes to enhance the narrative elements in the game.</>,
                     <>Managed and optimized several aspects of world building to improve game performance.</>,
-                    <>Performed bug fixing to ensure smooth gameplay experience.</>,
                     <>Implemented AMD FidelityFX™ Super Resolution 3 (FSR 3) technology into Unreal Engine to enhance game graphics performance.</>,
                 ],
 
                 images: [
                     {
                         src: '/images/projects/Lostcase.jpg',
+                        alt: 'Game Project Image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                company: 'Glitch Bubble',
+                timeframe: 'January 2025',
+                role: 'Programmer, Sound Design',
+                achievements: [
+                    <>A group project during the Global Game Jam 2025 in Malang.</>,
+                    <>Collaborated with the team to brainstorm and refine game mechanics aligned with the theme "bubble."</>,
+                    <>Developed and implemented the raycast mechanic.</>,
+                    <>Designed a modular system for interactable items, allowing for reusable components across multiple game objects.</>,
+                    <>Searched, edited, and optimized sound effects to fit the game's theme and enhance player immersion.</>,
+                    <>Integrated sound effects into gameplay mechanics, such as footsteps, bubble creation, etc.</>,
+                ],
+
+                images: [
+                    {
+                        src: '/images/projects/BBG1.png',
                         alt: 'Game Project Image',
                         width: 16,
                         height: 9
