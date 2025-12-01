@@ -217,12 +217,12 @@ const about = {
             {
                 name: 'SMK Negeri 4 Malang',
                 description: <>Software Engineering Major (RPL).</>,
-                timeframe:'2020 - 2023'
+                timeframe:'2023 - 2026'
             },
             {
                 name: 'SMP Negeri 11 Malang',
                 description: <></>,
-                timeframe:'2023 - 2026'
+                timeframe:'2020 - 2023'
             }
         ]
     },
