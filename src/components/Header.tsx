@@ -86,8 +86,8 @@ export const Header = () => {
                         )}
                         <ToggleButton
                             prefixIcon="book"
-                            href="https://drive.google.com/file/d/1FtZolI5c26jo2gmEbFDx-OlDcJy94Gnh/view?usp=drive_link"  // Ganti dengan link GDrive CV Anda
-                            target="_blank"  // Membuka link di tab baru
+                            href="https://drive.google.com/file/d/1t7EhglmRj1uE3pamCRpGYVQELT2OJdEY/view?usp=drive_link"  
+                            target="_blank"  
                             selected={false}>
                             <Flex paddingX="2" hide="s">CV</Flex>
                         </ToggleButton>

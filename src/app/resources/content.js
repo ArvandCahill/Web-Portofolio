@@ -43,7 +43,7 @@ const home = {
     title: `Home`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Game Programmer</>,
-    subline: <>Hello, I am Arvand Cahil, a student at <InlineCode>SMK Negeri 4 Malang</InlineCode> majoring in Software Engineering, focusing on game development.</>
+    subline: <>Hello, I am Arvand Cahil, a Computer Science student at <InlineCode>University of Brawijaya</InlineCode> with a passion for technology and software development</>
 }
 
 const about = {
@@ -64,7 +64,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>A student at SMK Negeri 4 Malang majoring in Software Engineering, focusing on game development. Through various projects, I strive to constantly update my knowledge and follow the latest technological developments in the field of game development.</>
+        description: <>Computer Science student with a background in Software Engineering and experience in programming and game development. Skilled in C#, and Unity, with a strong interest in technology and software development. Eager to continuously develop technical and leadership skills, collaborate with diverse teams, and contribute to impactful projects.</>
     },
     work: {
         display: true,
@@ -172,9 +172,7 @@ const about = {
                     <>A group project based on Unreal Engine.</>,
                     <>Searched for and selected assets to support visuals and gameplay for use in the game.</>,
                     <>Implemented monster animations for AI usage in the game.</>,
-                    <>Created cutscenes to enhance the narrative elements in the game.</>,
-                    <>Managed and optimized several aspects of world building to improve game performance.</>,
-                    <>Implemented AMD FidelityFX™ Super Resolution 3 (FSR 3) technology into Unreal Engine to enhance game graphics performance.</>,
+                    <>Created cutscenes to enhance the narrative elements in the game.</>
                 ],
 
                 images: [
@@ -215,15 +213,15 @@ const about = {
         title: 'Education',
         institutions: [
             {
+                name: 'University of Brawijaya',
+                description: <>Bachelor of Computer Science</>,
+                timeframe:'2026 - Present'
+            },
+            {
                 name: 'SMK Negeri 4 Malang',
                 description: <>Software Engineering Major (RPL).</>,
                 timeframe:'2023 - 2026'
             },
-            {
-                name: 'SMP Negeri 11 Malang',
-                description: <></>,
-                timeframe:'2020 - 2023'
-            }
         ]
     },
     technical: {
